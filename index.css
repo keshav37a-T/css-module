@@ -1,0 +1,153 @@
+html {
+  font-size: 16px;
+}
+
+.title {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* by elements */
+body {
+  font-size: 14px;
+}
+
+/* classnames */
+.container {
+  background-color: antiquewhite;
+}
+
+/* Descendant combinator */
+.container p {
+  background-color: gray;
+}
+
+/* ids */
+#preferred-way {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.combinators > p {
+  font-weight: bold;
+}
+
+.combinators ~ p {
+  font-size: 30px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* CSS Units */
+
+.pixels {
+}
+
+.rems-container {
+  font-size: 4px;
+}
+
+.rems {
+  font-size: 8rem;
+}
+
+.ems-container {
+  font-size: 4px;
+}
+
+.ems {
+  font-size: 8em;
+}
+
+.media-queries {
+  font-size: 20px;
+  background-color: blueviolet;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+  .media-queries {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: cadetblue;
+  }
+}
+
+/* Use a mobile first approach */
+
+/* 
+    Small mobile
+    Tablet
+    Desktop
+ */
+
+/* 
+ breakpoints
+
+ mobiles - 500px
+ tablets - 800px
+ desktop > more than 800
+ 
+ */
+
+.mobile {
+  font-size: 40px;
+  background-color: brown;
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 499px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .tablet {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .desktop {
+    display: block;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid-layout {
+  display: grid;
+  /* grid-template-columns: 100px 50px auto 1fr; */
+  grid-template-rows: 100px 50px auto 1fr;
+}
+
+.pseudo-classes {
+  background-color: green;
+}
+
+.pseudo-classes:hover {
+  background-color: blue;
+}
